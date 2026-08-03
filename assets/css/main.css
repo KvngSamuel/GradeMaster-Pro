@@ -1,0 +1,258 @@
+/* =====================================================
+   GradeMaster Pro
+   Main Stylesheet
+   Version 1.0
+===================================================== */
+
+/* ---------- Google Font ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ---------- Color Variables ---------- */
+
+:root{
+
+    --primary:#4F46E5;
+    --primary-dark:#4338CA;
+
+    --secondary:#8B5CF6;
+
+    --success:#10B981;
+
+    --warning:#F59E0B;
+
+    --danger:#EF4444;
+
+    --dark:#0F172A;
+
+    --light:#F8FAFC;
+
+    --white:#FFFFFF;
+
+    --text:#1E293B;
+
+    --text-light:#64748B;
+
+    --border:#E2E8F0;
+
+    --shadow:0 15px 40px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+    --transition:.35s ease;
+
+}
+
+/* Dark Theme */
+
+body.dark{
+
+    --light:#0F172A;
+
+    --white:#1E293B;
+
+    --text:#F8FAFC;
+
+    --text-light:#CBD5E1;
+
+    --border:#334155;
+
+}
+
+/* ---------- Body ---------- */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--light);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+    transition:var(--transition);
+
+}
+
+/* ---------- Links ---------- */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ---------- Images ---------- */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ---------- Buttons ---------- */
+
+button{
+
+    border:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+}
+
+/* ---------- Lists ---------- */
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ---------- Sections ---------- */
+
+section{
+
+    width:min(1200px,92%);
+
+    margin:auto;
+
+    padding:90px 0;
+
+}
+
+/* ---------- Background ---------- */
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    z-index:-1;
+
+}
+
+/* Floating Circles */
+
+.circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(90px);
+
+    opacity:.18;
+
+}
+
+.circle1{
+
+    width:350px;
+
+    height:350px;
+
+    background:var(--primary);
+
+    left:-120px;
+
+    top:-120px;
+
+}
+
+.circle2{
+
+    width:280px;
+
+    height:280px;
+
+    background:var(--secondary);
+
+    right:-80px;
+
+    top:120px;
+
+}
+
+.circle3{
+
+    width:250px;
+
+    height:250px;
+
+    background:var(--success);
+
+    bottom:-100px;
+
+    left:45%;
+
+}
+
+/* ---------- Headings ---------- */
+
+h1{
+
+    font-size:4rem;
+
+    line-height:1.1;
+
+    font-weight:800;
+
+}
+
+h2{
+
+    font-size:2.5rem;
+
+    font-weight:700;
+
+}
+
+h3{
+
+    font-size:1.25rem;
+
+}
+
+/* ---------- Paragraph ---------- */
+
+p{
+
+    line-height:1.8;
+
+    color:var(--text-light);
+
+}
+
+/* ---------- Utility ---------- */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.shadow{
+
+    box-shadow:var(--shadow);
+
+}
+
+.rounded{
+
+    border-radius:var(--radius);
+
+}

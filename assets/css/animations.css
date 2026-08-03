@@ -1,0 +1,174 @@
+/* ==========================================
+   GradeMaster Pro
+   Animations
+========================================== */
+
+/* Floating Background */
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+.circle1 {
+
+    animation: float 8s ease-in-out infinite;
+
+}
+
+.circle2 {
+
+    animation: float 10s ease-in-out infinite;
+
+}
+
+.circle3 {
+
+    animation: float 12s ease-in-out infinite;
+
+}
+
+/* Fade Up */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Fade Left */
+
+@keyframes fadeLeft {
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Fade Right */
+
+@keyframes fadeRight {
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Hero */
+
+.hero-left{
+
+    animation:fadeLeft .8s ease;
+
+}
+
+.hero-right{
+
+    animation:fadeRight 1s ease;
+
+}
+
+/* Stats */
+
+.stat{
+
+    animation:fadeUp .8s ease;
+
+}
+
+/* Features */
+
+.feature-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+/* Hover Glow */
+
+.feature-card:hover{
+
+    box-shadow:
+
+    0 25px 50px rgba(79,70,229,.18);
+
+}
+
+/* Hero Card Glow */
+
+.hero-card:hover{
+
+    box-shadow:
+
+    0 25px 60px rgba(79,70,229,.25);
+
+}
+
+/* Button Click */
+
+.btn-primary:active,
+
+.btn-secondary:active{
+
+    transform:scale(.97);
+
+}
+
+/* Smooth */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
